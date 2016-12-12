@@ -1,0 +1,77 @@
+body {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background-image: url("/assets/background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+.content {
+  margin-top: 50px;
+  margin-left: 50px;
+  max-width: 500px;
+}
+
+input {
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #000000;
+}
+input:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+input[type="submit"] {
+  padding: 15px 80px;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.inner-content {
+  max-width: 400px;
+}
+
+.half-width {
+  width: 48%;
+  float: left;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.first-input {
+  margin-right: 4%;
+}
