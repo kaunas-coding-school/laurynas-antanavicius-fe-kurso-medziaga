@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  background-image: url("/assets/background.jpg");
+  background-image: url("../assets/background.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: right bottom;
