@@ -31,7 +31,7 @@
   }
 
   function sendEmail() {
-    var url = "../send.php";
+    var url = "http://localhost/send";
     var data = new FormData(contactForm);
     var request = new Request(url, {
       method: "POST",
@@ -41,22 +41,19 @@
 
     fetch(request)
     .then(function(response) {
-      return response.blob();
+      console.log(response);
+      return response.json();
     })
-    .then(function(blob) {
-      var reader = new FileReader();
-      reader.readAsText(blob);
-      reader.addEventListener("loadend", function() {
-        // reader.result contains the contents of blob as a typed array
-        var message = JSON.parse(reader.result);
-        console.log(message);
-        if (message.success) {
-          $("#js-info-message").append( "<p class='success-message'>"+ message.success + "</p>");
-          $(contactForm).hide();
-        } else {
-        $("#js-info-message").append( "<p class='error-message'>"+ message.error + "</p>");
-        }
-      });
+    .then(function(json) {
+      var message = json;
+      console.log(message);
+      // if (message.success) {
+      //   $("#js-info-message").append( "<p class='success-message'>"+ message.success + "</p>");
+      //   $(contactForm).hide();
+      // } else {
+      // $("#js-info-message").append( "<p class='error-message'>"+ message.error + "</p>");
+      // }
+    // });
     });
   }
 
