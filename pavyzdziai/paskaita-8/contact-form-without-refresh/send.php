@@ -14,7 +14,7 @@
     $mail->Host       = "smtp.gmail.com";
     $mail->Port       = 587;
     $mail->Username   = "laurynas.ant@gmail.com";
-    $mail->Password   = "Arnoldopastasstumia300";
+    $mail->Password   = "";
 
     // Email header
     $mail->setFrom('laurynas.ant@gmail.com', 'Laurynas Antanavicius');
