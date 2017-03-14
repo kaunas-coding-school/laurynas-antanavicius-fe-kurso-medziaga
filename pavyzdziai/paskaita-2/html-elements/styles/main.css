@@ -1,0 +1,36 @@
+/* Default sizes */
+body {
+    font-size: 12px;
+}
+
+/* Absolute sizes */
+h1 {
+    font-size: 50px;
+    color: blue;
+}
+
+/* Relative sizes */
+h1 {
+    font-size: 300%;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+/* New: Window relative */
+/* Selected  by HTML element */
+h1 {
+    font-size: 10vh;
+}
+
+/* Selected  by class attribute */
+.main-heading {
+    color: green;
+}
+
+/* Selected  by ID attribute */
+/* !NEPIKTNAUDZIAUTI */
+#query {
+    border: 3px solid black;
+}
