@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.main-container {
+    background-image: url('assets/background.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-left: 50px;
+}
