@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>JS Skaičiuoklė</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <!-- Bootstrap konteineris -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6 col-xs-offset-3">
-                    <!-- Skaiciuokles Html -->
-                    <form class="calculator">
-                        <input id="js-screen" class="form-control text-right screen" type="text" name="screen" value="0" disabled>
-                        <input class="btn onefourth" type="button" name="ac" value="AC">
-                        <input class="btn onefourth" type="button" name="plusminus" value="+/-">
-                        <input class="btn onefourth" type="button" name="percent" value="%">
-                        <input class="btn onefourth operator-button js-operator-button" type="button" name="divide" value="/">
-                        <input class="btn onefourth js-number-button" type="button" name="seven" value="7">
-                        <input class="btn onefourth js-number-button" type="button" name="eight" value="8">
-                        <input class="btn onefourth js-number-button" type="button" name="nine" value="9">
-                        <input class="btn onefourth operator-button js-operator-button" type="button" name="multiply" value="X">
-                        <input class="btn onefourth js-number-button" type="button" name="four" value="4">
-                        <input class="btn onefourth js-number-button" type="button" name="five" value="5">
-                        <input class="btn onefourth js-number-button" type="button" name="six" value="6">
-                        <input class="btn onefourth operator-button js-operator-button" type="button" name="minus" value="-">
-                        <input class="btn onefourth js-number-button" type="button" name="four" value="1">
-                        <input class="btn onefourth js-number-button" type="button" name="five" value="2">
-                        <input class="btn onefourth js-number-button" type="button" name="six" value="3">
-                        <input class="btn onefourth operator-button js-operator-button" type="button" name="minus" value="+">
-                        <input class="btn onehalf js-number-button" type="button" name="zero" value="0">
-                        <input class="btn onefourth" type="button" name="decimal" value=".">
-                        <input id="js-result" class="btn onefourth operator-button" type="button" name="result" value="=">
-                    </form>
-                </div>
-            </div>
-        </div>
-        <script src="main.js" charset="utf-8"></script>
-    </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JS Skaičiuoklė</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!-- Bootstrap konteineris -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3">
+        <!-- Skaiciuokles Html -->
+        <form class="calculator">
+          <input id="js-screen" class="form-control text-right screen" type="text" name="screen" value="0" disabled>
+          <input id="js-clear" class="btn onefourth" type="button" name="ac" value="AC">
+          <input class="btn onefourth" type="button" name="plusminus" value="+/-">
+          <input class="btn onefourth" type="button" name="percent" value="%">
+          <input class="btn onefourth operator-button js-operator-button" type="button" name="divide" value="/">
+          <input class="btn onefourth js-number-button" type="button" name="seven" value="7">
+          <input class="btn onefourth js-number-button" type="button" name="eight" value="8">
+          <input class="btn onefourth js-number-button" type="button" name="nine" value="9">
+          <input class="btn onefourth operator-button js-operator-button" type="button" name="multiply" value="X">
+          <input class="btn onefourth js-number-button" type="button" name="four" value="4">
+          <input class="btn onefourth js-number-button" type="button" name="five" value="5">
+          <input class="btn onefourth js-number-button" type="button" name="six" value="6">
+          <input class="btn onefourth operator-button js-operator-button" type="button" name="minus" value="-">
+          <input class="btn onefourth js-number-button" type="button" name="four" value="1">
+          <input class="btn onefourth js-number-button" type="button" name="five" value="2">
+          <input class="btn onefourth js-number-button" type="button" name="six" value="3">
+          <input class="btn onefourth operator-button js-operator-button" type="button" name="minus" value="+">
+          <input class="btn onehalf js-number-button" type="button" name="zero" value="0">
+          <input class="btn onefourth" type="button" name="decimal" value=".">
+          <input id="js-result" class="btn onefourth operator-button" type="button" name="result" value="=">
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
 </html>
